@@ -1,0 +1,9 @@
+<html>
+<h1>Here you just have to add query and it will get data from the table</h1>
+<form action='/answer'  method='post'>
+  {% csrf_token %}
+  <label for='label'> Query: </label>
+  <input id='ans' type='text' name='answer'>
+  <input type='submit' value='Retrieve'>
+</form>
+</html>
